@@ -9,6 +9,6 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-theme: jekyll-theme-modernist
+theme: minima
 title: Milner's Miscellany and Commonplace Book
 description: Taking a stab at blogging in 2022 because why not?
