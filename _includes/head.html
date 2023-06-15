@@ -1,0 +1,43 @@
+<head>
+    {% if jekyll.environment == "production" %}
+        {% if site.google_analytics %}
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RT0XR6QYC"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-3RT0XR6QYC');
+            </script>
+        {% endif %}
+    {% endif %}
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Language" content="en"/>
+
+    <title>{% if page.title %}{{ page.title | strip_html }} {% endif %}{{ site.title | strip_html }}</title>
+
+    {% if jekyll.environment == "production" %}
+        <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com"/>
+        <link rel="dns-prefetch" href="//cdn.mathjax.org"/>
+        <link rel="dns-prefetch" href="//cdnjs.cloudflare.com"/>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    {% else %}
+            <script src="/assets/js/jquery.js"></script>
+    {% endif %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="{% if page.meta_description %}{{ page.meta_description | xml_escape }}{% elsif page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}"/>
+    {% if page.meta_robots %}<meta name="robots" content="{{ page.meta_robots }}"/>
+    {% else %}<meta name="robots" content="all"/>{% endif %}
+    <meta name="author" content="{{ site.author }}"/>
+    {% if page.categories %}<meta name="keywords" content="{{ page.categories | join: ', ' }}"/>{% endif %}
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}";>
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for {{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}" />
+
+    <link rel="stylesheet" href="/assets/css/style.css" media="screen" type="text/css"/>
+    <link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css"/>
+</head>

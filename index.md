@@ -1,3 +1,27 @@
-## Welcome to my web site
-
-There is not much here, but you can find my [resume](resume.md).
+<div class="home">
+    {% if posts_count > 0 %}
+    <div class="posts">
+        {% for post in paginator.posts %}
+        <div class="post py3">
+            <p class="post-meta">
+                <span>{{ post.date | date: site.date_format }}</span>
+                {% if post.tags contains "popular" %}
+                <span class="post-meta-popular-tag">Popular</span>
+                {% endif %}
+            </p>
+            <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
+            <p class="post-summary">
+                {% if post.summary %}
+                    {{ post.summary }}
+                {% else %}
+                    {{ post.excerpt }}
+                {% endif %}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+    {% include pagination.html %}
+    {% else %}
+    <h1 class="center">{{ site.text.index.coming_soom }}</h1>
+    {% endif %}
+</div>

@@ -45,9 +45,7 @@ paginate: 12
 paginate_path: "/blog/:num/"
 sass:
   compressed: true
-remote_theme: pages-themes/architect@v0.2.0
 plugins:
-  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
 exclude: [vendor]
