@@ -8,7 +8,7 @@ url: "https://lincolnmilner.github.io"
 # Google services
 google_verification:
 google_analytics: G-3RT0XR6QYC
-google_tag_manager:  	GTM-PMGDPZV
+google_tag_manager: GTM-PMGDPZV
 
 show_related_posts: false
 show_post_footers: true
