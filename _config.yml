@@ -1,5 +1,5 @@
 # Site settings
-theme: jekyll-theme-dinky
+remote_theme: pages-themes/dinky@v0.2.0
 title: Milner's Miscellany and Commonplace Book
 author: Lincoln Milner
 description: Taking a stab at blogging in 202x because why not?
@@ -49,6 +49,7 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-remote-theme
 exclude: [vendor]
 
 collections_dir: collections
