@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <div class="home">
     {% if posts_count > 0 %}
     <div class="posts">
