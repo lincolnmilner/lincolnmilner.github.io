@@ -1,8 +1,5 @@
 _site
-lincolnmilner.github.io
 .sass-cache
-Gemfile.lock
-*.gem
-.jekyll-cache
 .jekyll-metadata
-vendor
+Gemfile.lock
+
