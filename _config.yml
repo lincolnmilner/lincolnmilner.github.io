@@ -1,5 +1,5 @@
 # Site settings
-remote_theme: pages-themes/dinky@v0.2.0
+theme: jekyll-theme-dinky
 title: Milner's Miscellany
 author: Lincoln Milner
 description: Taking a stab at blogging in 202x because why not?
