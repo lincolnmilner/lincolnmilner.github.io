@@ -37,3 +37,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # Fix webrick error on serve
 gem "webrick"
+
+gemspec
