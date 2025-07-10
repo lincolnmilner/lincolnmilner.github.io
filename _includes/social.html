@@ -1,0 +1,9 @@
+<ul class="solial-media-list">
+    {%- for entry in site.dinky.social_links -%}
+        <li>
+            <a rel="me" href="{{ entry.url }}" target="_blank" title="{{ entry.title }}">
+                <span class="grey fa-brands fa-{{ entry.icon }}"></span>
+            </a>
+        </li>
+    {%- endfor -%}
+</ul>
