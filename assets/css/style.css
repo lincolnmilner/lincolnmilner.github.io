@@ -6,8 +6,8 @@ body {
     padding: 10px 50px 0 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color: #232323;
-    background-color: #FBFAF7;
+    color: #333;
+    background-color: #e6e6e6;
     margin: 0;
     line-height: 1.8em;
     -webkit-font-smoothing: antialiased;
@@ -18,7 +18,7 @@ p, ul, ol, table, dl {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #232323;
+    color: #333;
     margin: 36px 0 10px;
 }
     h1, h2, h3 {
@@ -82,7 +82,7 @@ blockquote {
 }
 
 dl, dt, dd, dl p {
-    color: #444;
+    color: #333;
 }
 
 dl dt {
@@ -101,7 +101,7 @@ dl p {
 
 hr {
     border: 0;
-    background: #ccc;
+    background: #e6e6e6;
     height: 1px;
     margin: 0 0 24px;
 }
@@ -113,7 +113,7 @@ img {
     max-width: 650px;
     padding: 5px;
     margin: 10px 0 32px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #e6e6e6;
 }
 
 p img, .emoji {
@@ -172,8 +172,8 @@ td {
 
 /* Header */
 header {
-    background-color: #171717;
-    color: #FDFDFB;
+    background-color: #f80;
+    color: #e6e6e6;
     width: 170px;
     float: left;
     position: fixed;
@@ -194,7 +194,7 @@ p.header {
 }
 
 h1.header {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 300;
     line-height: 1.3em;
     border-bottom: none;
@@ -203,7 +203,7 @@ h1.header {
 
 
 h1.header, a.header, a.name, header a{
-    color: #fff;
+    color: #e6e6e6;
 }
 
 a.header {
