@@ -12,16 +12,16 @@ lang: "en-US"
 
 google_analytics: "G-3RT0XR6QYC"
 
-dinky:
-  show_excerpts: true
-  date_format: "%m/%d/%Y"
-  social_links:
-    - title: GitHub repository
-      icon: github
-      url: 
-    - title: LinkedIn
-      icon: linkedin
-      url: 
+show_excerpts: true
+date_format: "%m/%d/%Y"
+
+social_links:
+  - title: GitHub repository
+    icon: github
+    url: 
+  - title: LinkedIn
+    icon: linkedin
+    url: 
 
 
 # Build settings

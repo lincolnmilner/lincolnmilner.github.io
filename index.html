@@ -1,0 +1,60 @@
+---
+layout: home
+---
+
+<h2>Blog posts</h2>
+
+<section>
+    {%- if site.paginate -%}
+        {%- assign posts = paginator.posts -%}
+    {%- else -%}
+        {%- assign posts = site.posts -%}
+    {%- endif -%}
+
+    {%- if posts.size > 0 -%}
+        {%- for post in posts -%}
+            <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">{{ item.title | escape }}</a>
+            </h3>
+            <h6>
+                <span>
+                    {{ post.date | date: site.date_format | escape }}
+                    {%- if post.modified_date -%}
+                        &nbsp; &bull; &nbsp; last modified
+                        {{ post.modified_date | date: site.date_format | escape }}
+                    {%- endif -%}
+                    &nbsp; &bull; &nbsp;
+                    {%- assign words = post.content | number_of_words -%}
+                    {%- if words < 360 -%}
+                        1 minute read
+                    {%- else -%}
+                        {{ words | divided_by: 180 }} minute read
+                    {%- endif -%}
+                </span>
+            </h6>
+            {%- if site.show_excerpts -%}
+                {{ post.excerpt }}
+            {%- endif -%}
+        {%- endfor -%}
+
+        {%- if site.paginate -%}
+            <div class="pager">
+                <span class="pagination">
+                    {%- if paginator.previous_page -%}
+                        <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-item older">Previous (page {{ paginator.previous_page }})</a>
+                    {%- else -%}
+                        <div class="pagination-item older"></div>
+                    {%- endif -%}
+
+                    <div class="pagination-item">{{ paginator.page }}</div>
+
+                    {%- if paginator.next_page -%}
+                        <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-item newer">Next (page {{ paginator.next_page }})</a>
+                    {%- else -%}
+                        <div class="pagination-item newer">•</div>
+                    {%- endif -%}
+                </span>
+            </div>
+        {%- endif -%}
+    {%- endif -%}
+</section>

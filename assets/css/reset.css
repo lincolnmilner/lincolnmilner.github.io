@@ -44,3 +44,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+body {
+	word-wrap: break-word;
+}
+
+* {
+	box-sizing: border-box;
+}
