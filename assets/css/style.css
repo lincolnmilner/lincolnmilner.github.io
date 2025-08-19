@@ -4,7 +4,7 @@
 /* General */
 body {
     padding: 10px 50px 50px 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: #333;
@@ -29,7 +29,7 @@ p, ul, ol, table, dl {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Times New Roman', 'Times', serif;
+    font-family: "Roboto Slab", 'Times New Roman', 'Times', serif;
     line-height: 1.2;
 }
     h1,h2, h3, h4 {
@@ -79,8 +79,7 @@ ul {
 }
 
 ol {
-    list-style-position: inside;
-    list-style: decimal;
+    list-style: decimal inside;
     padding-left: 20px;
 }
 
@@ -118,7 +117,6 @@ hr {
 /* Images */
 img {
     position: relative;
-    margin: 0 auto;
     max-width: 650px;
     padding: 10px;
     margin: 10px 0 32px;
@@ -138,10 +136,7 @@ p img, .emoji {
 .centered {
     border-radius: 4px;
     border: 1px solid #ccc;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto;
     display: block;
 }
 
@@ -151,16 +146,13 @@ p img, .emoji {
     border: unset;
     border: 1px solid #f80;
     float: left;
-    margin-left: 0;
-    margin-right: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px 10px 5px 0;
     padding: 0;
 }
 
 /* Code blocks */
 code, pre {
-    font-family: 'Monaco', 'Bitstream Vera Sans Mono', 'Lucida Console', 'Terminal', monospace;
+    font-family: "Roboto Mono", 'Monaco', 'Bitstream Vera Sans Mono', 'Lucida Console', 'Terminal', monospace;
     color: #000;
     font-size: 14px;
 }
@@ -184,7 +176,7 @@ div.gist-file > .gist-meta {
     font-size: unset;
     font-size: 14px;
     font-family: unset;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     > a {
         font-weight: unset;
         font-weight: 550;
@@ -199,7 +191,7 @@ table {
 }
 
 th {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
     padding: 10px;
     background: #232323;
@@ -237,11 +229,11 @@ header {
 
 p.header {
     font-size: 14px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1.header {
-    font-family: 'Times New Roman', 'Times', serif;
+    font-family: "Roboto Slab", 'Times New Roman', 'Times', serif;
     font-weight: 700;
     line-height: 1.2em;
     border-bottom: none;
@@ -296,7 +288,7 @@ header li {
 a.buttons {
     -webkit-font-smoothing: antialiased;
     background: url(../images/arrow-down.png) no-repeat;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 14px;
     color: #fff;
@@ -312,7 +304,7 @@ a.buttons {
 a.buttons-u {
     -webkit-font-smoothing: antialiased;
     background: url(../images/arrow-up.png) no-repeat 1px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 14px;
     text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
@@ -327,7 +319,7 @@ a.buttons-u {
 a.buttons-r {
     -webkit-font-smoothing: antialiased;
     background: url(../images/arrow-right.png) no-repeat;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 14px;
     text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
@@ -472,7 +464,7 @@ a[rel="footnote"] {
     margin-right: 0;
     margin-top: 100px;
     margin-bottom: 50px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     color: #ccc;
     text-align: center;
@@ -532,17 +524,17 @@ a.pagination-item:hover {
     font-size: unset;
     font-size: 15px !important;
     --nc-background: #FBFAF7;
-    --nc-container-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --nc-container-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --nc-container-font-size: 15px;
     --nc-comment-author-font-size: 15px;
-    --nc-comment-author-font-family: 'Times New Roman', 'Times', serif;
+    --nc-comment-author-font-family: "Roboto Mono", 'Times New Roman', 'Times', serif;
     --nc-comment-author-font-color: rgb(80,80,247);
     --nc-comment-date-color: #323232;
-    --nc-comment-date-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --nc-comment-date-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --nc-comment-date-font-size: 15px - 2px !important;
     --nc-link-text-decor: none;
     --nc-link-text-decor-hover: none;
-    --nc-textarea-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --nc-textarea-font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --nc-textarea-font-size: 15px;
     --nc-text-background: #fff;
     --nc-text-color: #323232;
