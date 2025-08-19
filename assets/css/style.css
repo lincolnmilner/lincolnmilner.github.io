@@ -235,6 +235,7 @@ p.header {
 h1.header {
     font-family: "Roboto Slab", 'Times New Roman', 'Times', serif;
     font-weight: 700;
+    font-size: 18px;
     line-height: 1.2em;
     border-bottom: none;
 }

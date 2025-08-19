@@ -18,10 +18,10 @@ date_format: "%m/%d/%Y"
 social_links:
   - title: GitHub repository
     icon: github
-    url: 
+    url: https://github.com/lincolnmilner
   - title: LinkedIn
     icon: linkedin
-    url: 
+    url: https://www.linkedin.com/in/lincolnmilner/
 
 
 # Build settings
