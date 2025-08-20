@@ -554,3 +554,7 @@ a.pagination-item:hover {
     padding-right: 5px;
     height: 34px;
 }
+
+footer > p > small {
+    font-style: italic;
+}
